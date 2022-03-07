@@ -2,7 +2,7 @@ package offer2;
 
 import java.util.Arrays;
 
-class Solution99 {
+class Solution099 {
     //动态规划 ，二维数组扩充一列
     public int minPathSum(int[][] grid) {
         int m = grid.length;
@@ -25,14 +25,15 @@ class Solution99 {
     public int minPathSum1(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
-
+        //第0列填充
         for (int i = 1; i < m; i++) {
             grid[i][0] += grid[i - 1][0];
         }
+        //第0行填充
         for (int j = 1; j < n; j++) {
             grid[0][j] += grid[0][j - 1];
         }
-
+        //剩余填充
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {
                 grid[i][j] += Math.min(grid[i - 1][j], grid[i][j - 1]);
@@ -49,13 +50,16 @@ class Solution99 {
         int[] dp = new int[n];
 
         dp[0] = grid[0][0];
-
+        //第0行填充
         for (int j = 1; j < n; j++) {
             dp[j] = grid[0][j] + dp[j - 1];
         }
+
         for (int i = 1; i < m; i++) {
-            dp[0] += grid[i][0];
+            //第0列填充
+            dp[0] += grid[i][0];//只能选择前一行的值
             for (int j = 1; j < n; j++) {
+                //选择上一行 和 左侧 的 值
                 dp[j] = Math.min(dp[j], dp[j - 1]) + grid[i][j];
             }
         }

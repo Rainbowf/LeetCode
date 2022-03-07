@@ -39,7 +39,6 @@ class Solution098 {
     //动态规划改良
     public int uniquePaths11(int m, int n) {
         int[][] dp = new int[m][n];
-        //LeetCode不支持上面库函数时
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (dp[i][j] == 0) {
