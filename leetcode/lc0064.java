@@ -1,4 +1,4 @@
-package offer2;
+package leetcode;
 
 import java.util.Arrays;
 //offer2q099

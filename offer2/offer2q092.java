@@ -2,7 +2,8 @@ package offer2;
 
 import java.util.*;
 
-class Solution {
+class Solution092 {
+    //双序列
     public int minFlipsMonoIncr(String s) {
         int n = s.length();
         if (n == 0) return 0;

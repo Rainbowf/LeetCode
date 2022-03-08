@@ -17,9 +17,7 @@ class Solution090 {
 
     private int helper(int[] nums, int start, int end) {
         int[] dp = new int[2];
-
         dp[0] = nums[start];
-
         if (start < end) {
             dp[1] = Math.max(nums[start], nums[start + 1]);
         }

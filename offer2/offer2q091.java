@@ -3,6 +3,7 @@ package offer2;
 import java.util.*;
 
 class Solution091 {
+    //三序列dp
     public int minCost(int[][] costs) {
         int n = costs.length;
 
