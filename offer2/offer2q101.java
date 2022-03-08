@@ -9,7 +9,6 @@ class Solution101 {
         if (sum % 2 == 1) {
             return false;
         }
-
         return subsetSum(nums, sum / 2);
     }
 
@@ -48,8 +47,8 @@ class Solution101 {
 
         for (int i = 1; i <= l; i++) {
             for (int j = 1; j <= target; j++) {
-                dp[i][j] = dp[i - 1][j];
-                if (!dp[i][j] && j >= nums[i - 1]) {
+                dp[i][j] = dp[i - 1][j];//不选择
+                if (!dp[i][j] && j >= nums[i - 1]) {//选择
                     dp[i][j] = dp[i - 1][j - nums[i - 1]];
                 }
             }
@@ -64,8 +63,7 @@ class Solution101 {
         dp[0] = true;
 
         for (int i = 1; i <= l; i++) {
-            for (int j = target; j >0; --j) {
-
+            for (int j = target; j > 0; --j) {
                 if (!dp[j] && j >= nums[i - 1]) {
                     dp[j] = dp[j - nums[i - 1]];
                 }
@@ -74,3 +72,4 @@ class Solution101 {
         return dp[target];
     }
 }
+

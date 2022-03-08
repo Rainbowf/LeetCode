@@ -1,6 +1,6 @@
 package offer2;
 
-class Solution97 {
+class Solution097 {
     public int numDistinct(String s, String t) {
         int len1 = s.length();
         int len2 = t.length();
@@ -16,12 +16,13 @@ class Solution97 {
             //注意i、j范围
             for (int j = 0; j <= i && j < len2; j++) {
                 if(s.charAt(i) == t.charAt(j)){
+                    //s[0,i]匹配T[0,j]或s[0,i-1]匹配T[0,j]
                     dp[i+1][j+1] = dp[i][j] + dp[i][j+1];
                 }else {
+                    //s[0,i-1]匹配T[0,j]
                     dp[i+1][j+1] = dp[i][j+1];
                 }
             }
-
         }
         return dp[len1][len2];
     }
