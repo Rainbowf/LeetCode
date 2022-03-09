@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-class Solution {
+class Solution0986 {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         List<int[]> res = new LinkedList<>();
 

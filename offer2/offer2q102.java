@@ -46,14 +46,16 @@ class Solution102 {
     }
 
     private int subsetSum(int[] nums, int target) {
-        int l = nums.length;
         int[] dp = new int[target + 1];
-        dp[0] = 1;
-        for (int num : nums) {
-            for (int j = target; j >= num; --j) {
-                dp[j] += dp[j - num];
+        for (int i = 0; i <= target; i++) {
+            dp[i] = target + 1;
+            for (int coin : nums) {
+                if (i >= coin) {
+                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+                }
             }
         }
-        return dp[target];
+        return dp[target] > target ? -1 : dp[target];
     }
 }
+
