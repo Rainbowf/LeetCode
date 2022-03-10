@@ -1,10 +1,9 @@
 package leetcode;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
-class Solution0200 {
-    public int numIslands(char[][] grid) {
+class Solution0463 {
+    public int islandPerimeter(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
         int num = 0;
@@ -12,9 +11,8 @@ class Solution0200 {
 
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
-                if(grid[i][j] == '1' && !visited[i][j]){
-                    getNum(grid, visited, i, j);
-                    num++;
+                if(grid[i][j] == 1 && !visited[i][j]){
+                    return getNum(grid, visited, i, j);
                 }
             }
         }
@@ -22,7 +20,7 @@ class Solution0200 {
     }
 
     //基于 广度优先搜索
-    private void getNum(char[][] grid, boolean[][] visited, int i, int j){
+    private int getNum(int[][] grid, boolean[][] visited, int i, int j){
         int m = grid.length;
         int n = grid[0].length;
         //队列
@@ -33,18 +31,23 @@ class Solution0200 {
 
         //定义方向
         int[][] dirs = {{-1,0}, {1, 0}, {0, -1}, {0, 1}};
-
+        int num = 0;
         while(!queue.isEmpty()){
             int[] pos = queue.remove();
 
             for(int[] dir: dirs){
                 int r = pos[0] + dir[0];
                 int c = pos[1] + dir[1];
-                if(r >= 0 && r < m && c >= 0 && c < n && grid[r][c] == '1' && !visited[r][c]){
+                if(r >= 0 && r < m && c >= 0 && c < n && grid[r][c] == 1 && !visited[r][c]){
                     queue.add(new int[]{r, c});
                     visited[r][c] = true;
+                }else if(r <0 || r >=m || c <0 || c >= n){
+                    num++;
+                }else if(grid[r][c] == 0){
+                    num++;
                 }
             }
         }
+        return num;
     }
 }
