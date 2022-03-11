@@ -1,21 +1,38 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
 
+class Solution0443 {
+    private char[] gines = {'A', 'C', 'G', 'T'};
 
-class Solution108 {
-    //单向广度搜索
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+    private List<String> getNeighbors(String word) {
+        List<String> neighbors = new LinkedList<>();
+        char[] chars = word.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            char old = chars[i];
+            for (char ch : gines) {
+                if (old != ch) {
+                    chars[i] = ch;
+                    neighbors.add(new String(chars));
+                }
+            }
+            chars[i] = old;
+        }
+        return neighbors;
+    }
+
+    //单向
+    public int minMutation(String start, String end, String[] bank) {
         Queue<String> queue1 = new LinkedList<>();
         Queue<String> queue2 = new LinkedList<>();
-        Set<String> notVisited = new HashSet<>(wordList);
+        Set<String> notVisited = new HashSet<>(Arrays.asList(bank));
 
-        int length = 1;
-        queue1.add(beginWord);
+        int length = 0;
+        queue1.add(start);
 
         while (!queue1.isEmpty()) {
             String word = queue1.remove();
-            if (word.equals(endWord)) {
+            if (word.equals(end)) {
                 return length;
             }
             //1、生成邻居字符串
@@ -34,38 +51,24 @@ class Solution108 {
                 queue2 = new LinkedList<>();
             }
         }
-        return 0;
+        return -1;
     }
 
-    private List<String> getNeighbors(String word) {
-        List<String> neighbors = new LinkedList<>();
-        char[] chars = word.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
-            char old = chars[i];
-            for (char ch = 'a'; ch <= 'z'; ++ch) {
-                if (old != ch) {
-                    chars[i] = ch;
-                    neighbors.add(new String(chars));
-                }
-            }
-            chars[i] = old;
-        }
-        return neighbors;
-    }
+    //双向
+    public int minMutation2(String start, String end, String[] bank) {
+        Set<String> notVisited = new HashSet<>(Arrays.asList(bank));
 
-    //双向广度优先搜索
-    public int ladderLength2(String beginWord, String endWord, List<String> wordList) {
-        Set<String> notVisited = new HashSet<>(wordList);
-        if (!notVisited.contains(endWord)) {
-            return 0;
+        if (!notVisited.contains(end)) {
+            return -1;
         }
+
         Set<String> set1 = new HashSet<>();
         Set<String> set2 = new HashSet<>();
-        int length = 2;
-        set1.add(beginWord);
-        set2.add(endWord);
+        int length = 1;
+        set1.add(start);
+        set2.add(end);
 
-        notVisited.remove(endWord);
+        notVisited.remove(end);
         while (!set1.isEmpty() && !set2.isEmpty()) {
             //1、比较大小，选择小的开始遍历
             if (set2.size() < set1.size()) {
@@ -95,6 +98,6 @@ class Solution108 {
             length++;
             set1 = set3;
         }
-        return 0;
+        return -1;
     }
 }

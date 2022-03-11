@@ -1,8 +1,8 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
-//0797
-class Solution110 {
+
+class Solution0797 {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
         List<List<Integer>> result = new LinkedList<>();
         List<Integer> path = new LinkedList<Integer>();
