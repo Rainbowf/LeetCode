@@ -1,6 +1,7 @@
 package leetcode;
 
 class Solution004 {
+    //1.二进制
     public int singleNumber(int[] nums) {
         //1、bit位计数数组，0~31高到低
         int[] bitCnt = new int[32];
@@ -15,5 +16,15 @@ class Solution004 {
             res = (res << 1) + bitCnt[i] % 3;
         }
         return res;
+    }
+    //哈希表，空间换时间
+    //数字电路异或运算
+    public int singleNumber2(int[] nums) {
+        int a = 0, b = 0;
+        for (int num : nums) {
+            b = ~a & (b ^ num);
+            a = ~b & (a ^ num);
+        }
+        return b;
     }
 }
