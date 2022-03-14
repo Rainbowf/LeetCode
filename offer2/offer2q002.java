@@ -2,7 +2,8 @@ package offer2;
 
 import java.util.*;
 
-
+//时间：O(max(a,b))
+//空间：O(1)
 class Solution002 {
     public String addBinary(String a, String b) {
         StringBuilder result = new StringBuilder();

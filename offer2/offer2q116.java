@@ -1,5 +1,7 @@
 package offer2;
+
 import java.util.*;
+
 //朋友圈（并查集）
 class Solution116 {
     //法一：图搜索（广度、深度均可）
@@ -34,43 +36,50 @@ class Solution116 {
             }
         }
     }
+
     //法二：并查集
     public int findCircleNum2(int[][] isConnected) {
         int size = isConnected.length;//节点个数
         int[] fathers = new int[size];//存储每个节点指向的根节点，可换为HashMap
         //初始化根节点为自己
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             fathers[i] = i;
         }
 
         int cnt = size;//子集个数记录下来
         //遍历，更新,两两比较对角线比较
-        for(int i = 0;  i< size; i++){
-            for(int j = i+1; j < size; j++){
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
                 //相连接的判断语句 + 能否合并的语句
-                if(isConnected[i][j] == 1 && union(fathers, i, j)){
+                if (isConnected[i][j] == 1 && union(fathers, i, j)) {
                     cnt--;//合并进一个，子图数就少一个
                 }
             }
         }
         return cnt;
     }
+
     //下面都可以不用变，直接背
     //找到i位置的根节点，递归，终止条件为根节点的根节点必定是自己
-    private int findFather(int[] fathers, int i){
-        if(fathers[i] != i){
+    private int findFather(int[] fathers, int i) {
+        if (fathers[i] != i) {
             fathers[i] = findFather(fathers, fathers[i]);
-        }
+        }// else {
+        //   return fathers[i];
+        //}
         return fathers[i];
     }
+
     //判断两个节点能否合并，然后 合并两个节点
-    private boolean union(int[] fathers, int i, int j){
+    private boolean union(int[] fathers, int i, int j) {
         int faOfI = findFather(fathers, i);
         int faOfJ = findFather(fathers, j);
-        if(faOfI != faOfJ){
+        if (faOfI != faOfJ) {
             fathers[faOfI] = faOfJ;
             return true;
-        }
+        }// else {
+        //   return false;
+        //}
         return false;
     }
 }

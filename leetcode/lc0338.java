@@ -1,6 +1,8 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
+
+//offer2q003
 
 class Solution003 {
     //1.Brian Kernighan 算法

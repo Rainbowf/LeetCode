@@ -1,9 +1,8 @@
-package offer2;
-
+package leetcode;
 import java.util.*;
-//课程表（拓扑排序）
-class Solution113 {
-    public int[] findOrder(int numCourses, int[][] prerequisites) {
+
+class Solution0207 {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
         //构建图
         Map<Integer, List<Integer>> graph = new HashMap<>();
         for(int i = 0; i < numCourses; i++){
@@ -22,7 +21,7 @@ class Solution113 {
                 queue.add(i);
             }
         }
-        //
+        //深度搜索
         List<Integer> order = new LinkedList<>();
         while (!queue.isEmpty()) {
             int course = queue.remove();
@@ -36,6 +35,6 @@ class Solution113 {
             }
         }
 
-        return order.size() == numCourses ? order.stream().mapToInt(i -> i).toArray() : new int[0];
+        return order.size() == numCourses;
     }
 }

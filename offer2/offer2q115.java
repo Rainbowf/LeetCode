@@ -4,6 +4,7 @@ import java.util.*;
 
 class Solution115 {
     public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
+        //1、构建图，入度数组
         Map<Integer, Set<Integer>> graph = new HashMap<>();
         Map<Integer, Integer> inDegrees = new HashMap<>();
 
@@ -11,7 +12,7 @@ class Solution115 {
             //初始化
             for (int num : seq) {
                 //边界情况
-                if (num < 0 || num > org.length) {
+                if (num < 1 || num > org.length) {
                     return false;
                 }
                 graph.putIfAbsent(num, new HashSet<>());
@@ -28,7 +29,7 @@ class Solution115 {
             }
         }
 
-        //生成拓扑序列
+        //2、生成拓扑序列
         //添加入度为0的节点
         Queue<Integer> queue = new LinkedList<>();
         for (int num : inDegrees.keySet()) {
@@ -36,8 +37,9 @@ class Solution115 {
                 queue.add(num);
             }
         }
-        //返回结果
+        //3、返回结果
         List<Integer> built = new LinkedList<>();
+        //注意这里由于要判断是否唯一，所以queue中只能有一个
         while (queue.size() == 1) {
             int from = queue.remove();
             built.add(from);
@@ -48,8 +50,7 @@ class Solution115 {
                 }
             }
         }
-        int[] result = new int[built.size()];
-        result = built.stream().mapToInt(i -> i).toArray();
+        int[] result = built.stream().mapToInt(i -> i).toArray();
         return Arrays.equals(result, org);
     }
 }

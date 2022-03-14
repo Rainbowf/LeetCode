@@ -1,8 +1,8 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
 
-class Solution112 {
+class Solution0329 {
     private int m, n;
     private int[][] len;
     private int[][] dirs = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
@@ -37,5 +37,4 @@ class Solution112 {
         len[i][j] = length;
         return length;
     }
-    //拓扑排序
 }
