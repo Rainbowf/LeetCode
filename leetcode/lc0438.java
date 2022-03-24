@@ -1,8 +1,8 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
-
-class Solution015 {
+//offer2q015
+class Solution0438 {
     //滑动窗口+数组哈希
     public List<Integer> findAnagrams(String s1, String s2) {
         //1、结果构造

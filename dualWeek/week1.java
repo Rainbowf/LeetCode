@@ -4,16 +4,16 @@ import java.util.*;
 import java.util.Arrays;
 
 class Solutionweek1 {
-    public static void main(String[] args) {
-        double[][] nums1;
-        System.out.println((nums1));
-        Arrays.sort(nums1, (l1,l2)->({
-            if(l1[0] == l2[0]){
-                return l2[1] - l1[1];
-            }else {
-                return l1[0] == l2[0];
-            }});
-    }
+//    public static void main(String[] args) {
+//        double[][] nums1;
+//        System.out.println((nums1));
+//        Arrays.sort(nums1, (l1,l2)->({
+//            if(l1[0] == l2[0]){
+//                return l2[1] - l1[1];
+//            }else {
+//                return l1[0] == l2[0];
+//            }});
+//    }
 
 
 

@@ -1,8 +1,9 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
+//offer2q014
 
-class Solution014 {
+class Solution0567 {
     //滑动窗口+数组哈希
     //s1端，s2长
     public boolean checkInclusion(String s1, String s2) {

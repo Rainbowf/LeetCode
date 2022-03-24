@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.*;
 
-class Solution {
+class Solution0126 {
     //还没做
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         List<List<String>> res = new LinkedList<>();

@@ -13,6 +13,7 @@ class Solution016 {
             while (j < len) {
                 if (map.containsKey(s.charAt(j))) {
                     maxLen = Math.max(maxLen, j - i);
+                    break;
                 } else {
                     map.put(s.charAt(j), 1);
                 }
