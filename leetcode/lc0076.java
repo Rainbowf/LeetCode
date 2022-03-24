@@ -5,37 +5,35 @@ import java.util.*;
 
 class Solution0076 {
     public String minWindow(String s, String t) {
+        //长度
         int len1 = s.length();
         int len2 = t.length();
-        //1、边界情况
         if (len1 < len2) return "";
-        //2、中间变量
+        int[] cnts = new int[256];
         Set<Character> set = new HashSet<>();
-        int[] map = new int[256];
-        int kindNum = set.size();
-        int minLen = Integer.MAX_VALUE;
-        //3、初始化
-        for (int i = 0; i < len2; i++) {
-            map[t.charAt(i)]++;
-            set.add(t.charAt(i));//去重
+
+        //初始化
+        for (char ch : t.toCharArray()) {
+            set.add(ch);
+            cnts[ch]++;
         }
-        //4、遍历（滑动窗口）
-        int maxI = 0;
-        int minJ = 0;
+        int kindNum = set.size();
+        //结果
+        //遍历查找
         int i = 0, j = 0;
-        while (j < len1 || (kindNum == 0 && j == len1)) {
-            //没有全部包含，j向右扩充
+        int maxI = 0, minJ = len1;
+        int minLen = len1 + 1;
+        while (j < s.length() || (j == s.length() && kindNum == 0)) {
             if (kindNum > 0) {
                 if (set.contains(s.charAt(j))) {
-                    map[s.charAt(j)]--;
-                    if (map[s.charAt(j)] == 0) {
+                    cnts[s.charAt(j)]--;
+                    if (cnts[s.charAt(j)] == 0) {
                         kindNum--;
                     }
                 }
                 j++;
-                //全部包含了，i向右收缩（i和j左闭右开）
             } else {
-                //先保存最小长度结果
+                //左闭右开
                 if (j - i < minLen) {
                     minLen = j - i;
                     maxI = i;
@@ -43,15 +41,14 @@ class Solution0076 {
                 }
 
                 if (set.contains(s.charAt(i))) {
-                    map[s.charAt(i)]++;
-                    if (map[s.charAt(i)] == 1) {
+                    cnts[s.charAt(i)]++;
+                    if (cnts[s.charAt(i)] == 1) {
                         kindNum++;
                     }
                 }
                 i++;
             }
         }
-
-        return minLen < Integer.MAX_VALUE ? s.substring(maxI, minJ) : "";
+        return minLen == len1 + 1 ? "" : s.substring(maxI, minJ);
     }
 }

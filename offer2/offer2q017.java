@@ -69,13 +69,14 @@ class Solution017 {
         //2、中间变量
         Set<Character> set = new HashSet<>();
         int[] map = new int[256];
-        int kindNum = set.size();
+
         int minLen = Integer.MAX_VALUE;
         //3、初始化
         for (int i = 0; i < len2; i++) {
             map[t.charAt(i)]++;
             set.add(t.charAt(i));//去重
         }
+        int kindNum = set.size();
         //4、遍历（滑动窗口）
         int maxI = 0;
         int minJ = 0;

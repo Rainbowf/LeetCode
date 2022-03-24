@@ -1,4 +1,4 @@
-package offer2;
+package leetcode;
 
 //Definition for singly-linked list.
 public class ListNode {
