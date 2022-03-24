@@ -3,7 +3,7 @@ package leetcode;
 import java.util.*;
 //offer2q009
 
-class Solution {
+class Solution0713 {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         long mul = 1;
         int i = 0;
