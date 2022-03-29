@@ -3,7 +3,7 @@ package leetcode;
 import java.util.*;
 
 //offer2q022
-public class Solution0142 {
+class Solution0142 {
 
     public ListNode getNodeInLoop(ListNode head) {
         if (head == null || head.next == null) return null;
