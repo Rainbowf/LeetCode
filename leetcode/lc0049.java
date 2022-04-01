@@ -4,7 +4,7 @@ import java.util.*;
 
 //offer2q032
 
-class Solution {
+class Solution0049 {
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap<>();
         for (String str : strs) {

@@ -1,16 +1,19 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
 
-class Solution045 {
-    public int findBottomLeftValue(TreeNode root) {
+//offer2q046
+
+class Solution0199 {
+    public List<Integer> rightSideView(TreeNode root) {
+        List<Integer> resView = new LinkedList<>();
+
+        if (root == null) {
+            return resView;
+        }
         Queue<TreeNode> queue1 = new LinkedList<>();
         Queue<TreeNode> queue2 = new LinkedList<>();
-
-        if (root != null) {
-            queue1.offer(root);
-        }
-        int bottomLeft = root.val;
+        queue1.offer(root);
 
         while (!queue1.isEmpty()) {
             TreeNode node = queue1.poll();
@@ -23,13 +26,12 @@ class Solution045 {
             }
 
             if (queue1.isEmpty()) {
+                resView.add(node.val);
+
                 queue1 = queue2;
                 queue2 = new LinkedList<>();
-                if(!queue1.isEmpty()){
-                    bottomLeft = queue1.peek().val;
-                }
             }
         }
-        return bottomLeft;
+        return resView;
     }
 }
