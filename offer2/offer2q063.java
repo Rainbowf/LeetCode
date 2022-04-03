@@ -46,7 +46,6 @@ class Solution063 {
     public String replaceWords(List<String> dictionary, String sentence) {
         //构成前缀树
         TrieNode root = buildTrie(dictionary);
-        StringBuilder builder = new StringBuilder();
 
         String[] words = sentence.split(" ");
         for(int i = 0; i < words.length; i++){
