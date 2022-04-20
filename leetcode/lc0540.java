@@ -1,8 +1,11 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
 
-class Solution070 {
+//offer2q070
+
+class Solution0540 {
+
     public static void main(String[] args) {
         int[] nums1 = {1};
         int[] nums2 = {1, 2, 2, 3, 3};
@@ -10,10 +13,12 @@ class Solution070 {
         System.out.println(singleNonDuplicate(nums2));
     }
 
+    // 5:  0 1 2 3 4  k = 2
+// 6： 0 1 2 3 4 5， k = 4
     public static int singleNonDuplicate(int[] nums) {
-        if (nums.length == 1) return nums[0];
         int i = 0;
         int j = nums.length / 2;
+
         while (i <= j) {
             int m = i + (j - i) / 2;
             int k = 2 * m;
@@ -22,7 +27,6 @@ class Solution070 {
                     return nums[k];
                 }
                 j = m - 1;
-
             } else {
                 i = m + 1;
             }
@@ -56,6 +60,7 @@ class Solution070 {
         }
         return nums[low];
     }
+
 //
 //    作者：LeetCode-Solution
 //    链接：https://leetcode-cn.com/problems/single-element-in-a-sorted-array/solution/you-xu-shu-zu-zhong-de-dan-yi-yuan-su-by-y8gh/
