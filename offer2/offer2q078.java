@@ -3,13 +3,13 @@ package offer2;
 import java.util.*;
 
 class Solution078 {
-    //最小堆思路
+    //最小堆思路kn×logk  空间复杂度为 O(k)
     public ListNode mergeKLists1(ListNode[] lists) {
         //哑结点
         ListNode dummy = new ListNode(0);
         ListNode cur = dummy;
 
-        //构造最小堆,先插入<=k个
+        //构造最小堆,先插入<=k个(链表头结点）
         PriorityQueue<ListNode> minHeap = new PriorityQueue<>((n1, n2) -> (n1.val - n2.val));
         for (ListNode list : lists) {
             if (list != null) {
@@ -29,7 +29,7 @@ class Solution078 {
         return dummy.next;
     }
 
-    //归并排序思路
+    //归并排序思路kn×logk   O(logk) 空间
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) {
             return null;
