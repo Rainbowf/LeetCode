@@ -3,7 +3,15 @@ package offer2;
 import java.util.*;
 
 class Solution074 {
-    public int[][] merge(int[][] intervals) {
+    public static void main(String[] args) {
+        int[][] temp = new int[][]{{1,3},{2,6}, {8, 10},{9, 18}};
+        int[][] res = merge(temp);
+        for(int[] nums:res){
+            System.out.printf("%d %d",nums[0],nums[1]);
+        }
+
+    }
+    public static int[][] merge(int[][] intervals) {
         //先按照起始位置排序
         Arrays.sort(intervals, (i1, i2) -> i1[0] - i2[0]);
 
