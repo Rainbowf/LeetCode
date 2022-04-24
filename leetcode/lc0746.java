@@ -1,11 +1,9 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
-/*
-    70. 爬楼梯
-    746. 使用最小花费爬楼梯(同）
- */
-class Solution088 {
+//offer2q088
+
+class Solution0746 {
     //一维数组
     public int minCostClimbingStairs(int[] cost) {
         int[] dp = new int[cost.length];

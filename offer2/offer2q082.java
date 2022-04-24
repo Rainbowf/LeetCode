@@ -22,10 +22,11 @@ class Solution082 {
         } else if (i < candidates.length && target > 0) {
             //不取，直接下一个
             helper(candidates, getNext(candidates, i), target, comb, res);
-
-            comb.add(candidates[i]);
-            helper(candidates, i + 1, target - candidates[i], comb, res);
-            comb.removeLast();
+            if (target - candidates[i] >= 0) {
+                comb.add(candidates[i]);
+                helper(candidates, i + 1, target - candidates[i], comb, res);
+                comb.removeLast();
+            }
         }
     }
 
