@@ -1,8 +1,9 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
-//213
-class Solution090 {
+//offer2q090
+
+class Solution0213 {
     public int rob(int[] nums) {
         //长度为0
         if (nums.length == 0) return 0;

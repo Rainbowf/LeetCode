@@ -1,9 +1,7 @@
 package offer2;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
+
 
 class Solution106 {
     public boolean isBipartite(int[][] graph) {

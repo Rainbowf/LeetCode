@@ -1,8 +1,12 @@
-package offer2;
+package leetcode;
 
 import java.util.*;
-//152,198
-class Solution089 {
+//offer2q089
+
+//递推公式：dp[i]到第i间房屋所盗取的最大钱
+//dp[i] = max(dp[i-1],dp[i-2]+nums[i])(i>=2)
+
+class Solution0198 {
     //一维数组dp
     public int rob1(int[] nums) {
         //创建dp表

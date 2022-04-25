@@ -10,8 +10,6 @@ class Solution102 {
             return 0;
         }
         return subsetSum(nums, (sum - target) / 2);
-
-
     }
 
     private int subsetSum1(int[] nums, int target) {
