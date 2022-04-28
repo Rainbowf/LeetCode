@@ -3,7 +3,7 @@ package offer2;
 import java.util.*;
 
 class Solution092 {
-    //双序列
+    //dp双序列_空间优化
     public int minFlipsMonoIncr(String s) {
         int n = s.length();
         if (n == 0) return 0;
@@ -25,5 +25,17 @@ class Solution092 {
         }
 
         return Math.min(dp[0][(n - 1) % 2], dp[1][(n - 1) % 2]);
+    }
+    //前缀和
+    public int minFlipsMonoIncr_2(String s) {
+        int[] dp = new int[s.length() + 1];
+        for (int i = 0; i < s.length(); i++) {
+            dp[i + 1] = dp[i] + (s.charAt(i) == '1' ? 1 : 0);
+        }
+        int res = Integer.MAX_VALUE;
+        for (int j = 0; j <= s.length(); j++) {
+            res = Math.min(res, dp[j] + s.length() - j - (dp[s.length()] - dp[j]));
+        }
+        return res;
     }
 }
