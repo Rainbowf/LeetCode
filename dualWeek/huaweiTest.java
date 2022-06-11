@@ -7,77 +7,143 @@ import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        char[] chars = {'3', '1'};
-        System.out.println(countNum(chars, 4));
+        int[] nums = {-1, -3, -4, 0 , 1, 2, 3, 4, 4};
+        System.out.println(calculate(nums));
     }
 
-    private static int topK(String[] strs, int k) {
-        HashMap<String, Integer> map = new HashMap<>();
-        for (String str : strs) {
-            if (!map.containsKey(str)) {
-                map.put(str, 1);
+    public static int calculate(int[] nums) {
+        int sum = 0;
+        for (int num : nums) {
+            if (num == 2 || num <= 0) {
+                sum += 0;
             } else {
-                map.put(str, map.get(str) + 1);
+                sum += num;
             }
         }
+        return sum;
+    }
 
-        PriorityQueue<HashMap.Entry> minHeap = new PriorityQueue<>((e1, e2) -> calculate(e1, e2));
 
-        for (HashMap.Entry entry : map.entrySet()) {
-            if (minHeap.size() < k) {
-                minHeap.offer(entry);
-            } else {
-                HashMap.Entry peek = minHeap.peek();
-                if (calculate(peek, entry) > 0) {
-                    minHeap.poll();
-                    minHeap.offer(entry);
-                }
+    //双指针
+    public int calculate2(int[] nums){
+
+        Arrays.sort(nums);
+        int l = nums.length - 1;
+        int r = nums.length - 1;
+        int max = Integer.MIN_VALUE;
+        int sum = 0;
+
+        for(; l <= r; r--){
+
+            sum += nums[l];
+
+            while (l >= 0 && sum % 3 == 0){
+                max = Math.max(sum, max);
+                l--;
             }
+            sum -= nums[r];
         }
-        return 0;
+        return sum;
     }
 
-    private static int calculate(HashMap.Entry e1, HashMap.Entry e2) {
-        //比较频率
-        if (e1.getValue() == e2.getValue()) {
-            String s1 = (String) e1.getKey();
-            String s2 = (String) e2.getKey();
-            int i = 0;
-            for (; i < s1.length() && i < s2.length(); i++) {
-                if (s1.charAt(i) < s1.charAt(i)) {
 
-                }
+    //双指针
+    public int calculate3(int[] nums){
+        int sum = 0;
+        for(int num: nums){
+            if(num > 0){
+                sum += num;
+
             }
-            return i == s1.length() ? 1 : -1;//改
 
-        } else {
-            Integer v1 = (Integer) e1.getValue();
-            Integer v2 = (Integer) e2.getValue();
-            return v1 - v2;
         }
+
+        int re = sum % 3;
+
+
+        return sum;
     }
 
 
-    private static int countNum(char[] chars, int mode) {
-        int q = 1;
-        int res = 0;
-        for (int i = chars.length - 1; i >= 0; i--) {
 
-            int num = change2num(chars[i]);
-            if (num >= mode) return -1;
-            res += num * q;
-            q *= mode;
-        }
-        return res;
-    }
 
-    private static int change2num(char ch) {
-        int res = ch - '0';
-        if (res < 10) {
-            return res;
-        } else return res - 7;
-    }
+
+
 }
+
+
+
+
+//
+//
+//
+//    private static int topK(String[] strs, int k) {
+//        HashMap<String, Integer> map = new HashMap<>();
+//        for (String str : strs) {
+//            if (!map.containsKey(str)) {
+//                map.put(str, 1);
+//            } else {
+//                map.put(str, map.get(str) + 1);
+//            }
+//        }
+//
+//        PriorityQueue<HashMap.Entry> minHeap = new PriorityQueue<>((e1, e2) -> calculate(e1, e2));
+//
+//        for (HashMap.Entry entry : map.entrySet()) {
+//            if (minHeap.size() < k) {
+//                minHeap.offer(entry);
+//            } else {
+//                HashMap.Entry peek = minHeap.peek();
+//                if (calculate(peek, entry) > 0) {
+//                    minHeap.poll();
+//                    minHeap.offer(entry);
+//                }
+//            }
+//        }
+//        return 0;
+//    }
+//
+//    private static int calculate(HashMap.Entry e1, HashMap.Entry e2) {
+//        //比较频率
+//        if (e1.getValue() == e2.getValue()) {
+//            String s1 = (String) e1.getKey();
+//            String s2 = (String) e2.getKey();
+//            int i = 0;
+//            for (; i < s1.length() && i < s2.length(); i++) {
+//                if (s1.charAt(i) < s1.charAt(i)) {
+//
+//                }
+//            }
+//            return i == s1.length() ? 1 : -1;//改
+//
+//        } else {
+//            Integer v1 = (Integer) e1.getValue();
+//            Integer v2 = (Integer) e2.getValue();
+//            return v1 - v2;
+//        }
+//    }
+//
+//
+//    private static int countNum(char[] chars, int mode) {
+//        int q = 1;
+//        int res = 0;
+//        for (int i = chars.length - 1; i >= 0; i--) {
+//
+//            int num = change2num(chars[i]);
+//            if (num >= mode) return -1;
+//            res += num * q;
+//            q *= mode;
+//        }
+//        return res;
+//    }
+//
+//    private static int change2num(char ch) {
+//        int res = ch - '0';
+//        if (res < 10) {
+//            return res;
+//        } else return res - 7;
+//    }
+//}
 
 
 //

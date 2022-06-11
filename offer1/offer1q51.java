@@ -2,7 +2,7 @@ package offer1;
 
 import java.util.*;
 
-class Solution {
+class Solution051 {
     //暴力解法，超时
     public int reversePairs0(int[] nums) {
         int len = nums.length;
