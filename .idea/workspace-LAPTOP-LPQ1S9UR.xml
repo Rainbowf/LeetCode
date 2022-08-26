@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0ad3d8c-ff94-4e8a-af20-e31177dc4809" name="默认的" comment="第32次提交20220611">
+      <change afterPath="$PROJECT_DIR$/dualWeek/microTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dualWeek/test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dualWeek/huaweiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dualWeek/huaweiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer2/offer2q001.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer2/offer2q001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer2/offer2q098.java" beforeDir="false" afterPath="$PROJECT_DIR$/offer2/offer2q098.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25xK46mdG8NT8Ftjvs8Publif7E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python project\leetcode\leetcode" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.test3">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dualWeek.Main" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dualWeek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution0600" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution0600" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dualWeek.main4" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dualWeek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="microTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dualWeek.microTest1" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dualWeek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dualWeek.test3" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dualWeek.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.test3" />
+        <item itemvalue="应用程序.microTest1" />
+        <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.Solution0600" />
+        <item itemvalue="应用程序.main4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0ad3d8c-ff94-4e8a-af20-e31177dc4809" name="默认的" comment="" />
+      <created>1646463102410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646463102410</updated>
+      <workItem from="1646463103470" duration="14457000" />
+      <workItem from="1646556368645" duration="3543000" />
+      <workItem from="1646652389082" duration="6859000" />
+      <workItem from="1646703147722" duration="23043000" />
+      <workItem from="1646808941470" duration="622000" />
+      <workItem from="1646822973548" duration="17824000" />
+      <workItem from="1646912743387" duration="6525000" />
+      <workItem from="1646979236420" duration="14782000" />
+      <workItem from="1647222126985" duration="16297000" />
+      <workItem from="1647256603834" duration="636000" />
+      <workItem from="1647936680842" duration="34885000" />
+      <workItem from="1648212487617" duration="8041000" />
+      <workItem from="1648474131408" duration="11672000" />
+      <workItem from="1648648634080" duration="15197000" />
+      <workItem from="1648801220232" duration="7307000" />
+      <workItem from="1648966388825" duration="12573000" />
+      <workItem from="1649242365534" duration="9387000" />
+      <workItem from="1649333566627" duration="1169000" />
+      <workItem from="1649336842630" duration="595000" />
+      <workItem from="1650442602965" duration="7000" />
+      <workItem from="1650457144259" duration="3026000" />
+      <workItem from="1650515000962" duration="1326000" />
+      <workItem from="1650516719993" duration="2914000" />
+      <workItem from="1650530945337" duration="1763000" />
+      <workItem from="1650610567618" duration="11014000" />
+      <workItem from="1650679593574" duration="14669000" />
+      <workItem from="1650701686589" duration="5000" />
+      <workItem from="1650766751573" duration="17399000" />
+      <workItem from="1650796507250" duration="11708000" />
+      <workItem from="1650852086261" duration="2226000" />
+      <workItem from="1650885688310" duration="7876000" />
+      <workItem from="1650938274980" duration="11170000" />
+      <workItem from="1650959657968" duration="1009000" />
+      <workItem from="1651121518342" duration="15511000" />
+      <workItem from="1651302923512" duration="6079000" />
+      <workItem from="1652239765641" duration="8276000" />
+      <workItem from="1653717785238" duration="1524000" />
+      <workItem from="1653720514273" duration="596000" />
+      <workItem from="1653744605472" duration="26000" />
+      <workItem from="1654913720153" duration="3296000" />
+      <workItem from="1659441436965" duration="196000" />
+      <workItem from="1659441652734" duration="19000" />
+      <workItem from="1659442090910" duration="356000" />
+      <workItem from="1659442556214" duration="147000" />
+      <workItem from="1659442718126" duration="104000" />
+      <workItem from="1659442837827" duration="873000" />
+      <workItem from="1659765670012" duration="2619000" />
+      <workItem from="1660351773453" duration="9970000" />
+    </task>
+    <task id="LOCAL-00001" summary="第一次提交20220305">
+      <created>1646488918157</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646488918157</updated>
+    </task>
+    <task id="LOCAL-00002" summary="第3次提交20220308">
+      <created>1646716564048</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646716564048</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第4次提交20220308">
+      <created>1646730764429</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646730764430</updated>
+    </task>
+    <task id="LOCAL-00004" summary="第5次提交20220309">
+      <created>1646826436548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646826436548</updated>
+    </task>
+    <task id="LOCAL-00005" summary="第6次提交20220310">
+      <created>1646893175663</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646893175663</updated>
+    </task>
+    <task id="LOCAL-00006" summary="第7次提交20220311">
+      <created>1646979353193</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646979353193</updated>
+    </task>
+    <task id="LOCAL-00007" summary="第8次提交20220311">
+      <created>1646987493486</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646987493486</updated>
+    </task>
+    <task id="LOCAL-00008" summary="第9次提交202203114">
+      <created>1647244316340</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647244316340</updated>
+    </task>
+    <task id="LOCAL-00009" summary="第10次提交202203114">
+      <created>1647256638319</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647256638319</updated>
+    </task>
+    <task id="LOCAL-00010" summary="第11次提交20220324">
+      <created>1648089071926</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648089071926</updated>
+    </task>
+    <task id="LOCAL-00011" summary="第12次提交20220324">
+      <created>1648113811831</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648113811831</updated>
+    </task>
+    <task id="LOCAL-00012" summary="第13次提交20220324">
+      <created>1648115241645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648115241645</updated>
+    </task>
+    <task id="LOCAL-00013" summary="第14次提交20220328">
+      <created>1648474456655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648474456655</updated>
+    </task>
+    <task id="LOCAL-00014" summary="第15次提交20220329">
+      <created>1648543262262</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648543262262</updated>
+    </task>
+    <task id="LOCAL-00015" summary="第16次提交20220329">
+      <created>1648568054143</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1648568054143</updated>
+    </task>
+    <task id="LOCAL-00016" summary="第17次提交20220401">
+      <created>1648801565093</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1648801565093</updated>
+    </task>
+    <task id="LOCAL-00017" summary="第18次提交20220401">
+      <created>1648812770698</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1648812770698</updated>
+    </task>
+    <task id="LOCAL-00018" summary="第19次提交20220403">
+      <created>1648971934437</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1648971934437</updated>
+    </task>
+    <task id="LOCAL-00019" summary="第20次提交20220403">
+      <created>1648987296765</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1648987296765</updated>
+    </task>
+    <task id="LOCAL-00020" summary="第21次提交20220420">
+      <created>1650462340469</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1650462340469</updated>
+    </task>
+    <task id="LOCAL-00021" summary="第22次提交20220421">
+      <created>1650533261375</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1650533261375</updated>
+    </task>
+    <task id="LOCAL-00022" summary="第23次提交20220423">
+      <created>1650679643490</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1650679643490</updated>
+    </task>
+    <task id="LOCAL-00023" summary="第24次提交20220423">
+      <created>1650695819901</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1650695819901</updated>
+    </task>
+    <task id="LOCAL-00024" summary="第25次提交20220423">
+      <created>1650700962998</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1650700962998</updated>
+    </task>
+    <task id="LOCAL-00025" summary="第26次提交20220424">
+      <created>1650790740759</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1650790740759</updated>
+    </task>
+    <task id="LOCAL-00026" summary="第27次提交20220425">
+      <created>1650893517177</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1650893517177</updated>
+    </task>
+    <task id="LOCAL-00027" summary="第28次提交20220425">
+      <created>1650894634999</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1650894634999</updated>
+    </task>
+    <task id="LOCAL-00028" summary="第29次提交20220426">
+      <created>1650940890990</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1650940890990</updated>
+    </task>
+    <task id="LOCAL-00029" summary="第29次提交20220426">
+      <created>1650943837558</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1650943837558</updated>
+    </task>
+    <task id="LOCAL-00030" summary="第30次提交20220426">
+      <created>1650959351049</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1650959351049</updated>
+    </task>
+    <task id="LOCAL-00031" summary="第30次提交20220426">
+      <created>1651122842091</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1651122842091</updated>
+    </task>
+    <task id="LOCAL-00032" summary="第31次提交20220428">
+      <created>1651137625414</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1651137625414</updated>
+    </task>
+    <task id="LOCAL-00033" summary="第32次提交20220611">
+      <created>1654915555385</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1654915555385</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第9次提交202203114" />
+    <MESSAGE value="第10次提交202203114" />
+    <MESSAGE value="第11次提交20220324" />
+    <MESSAGE value="第12次提交20220324" />
+    <MESSAGE value="第13次提交20220324" />
+    <MESSAGE value="第14次提交20220328" />
+    <MESSAGE value="第15次提交20220329" />
+    <MESSAGE value="第16次提交20220329" />
+    <MESSAGE value="第17次提交20220401" />
+    <MESSAGE value="第18次提交20220401" />
+    <MESSAGE value="第19次提交20220403" />
+    <MESSAGE value="第20次提交20220403" />
+    <MESSAGE value="第21次提交20220420" />
+    <MESSAGE value="第22次提交20220421" />
+    <MESSAGE value="第23次提交20220422" />
+    <MESSAGE value="第23次提交20220423" />
+    <MESSAGE value="第24次提交20220423" />
+    <MESSAGE value="第25次提交20220423" />
+    <MESSAGE value="第26次提交20220424" />
+    <MESSAGE value="第27次提交20220425" />
+    <MESSAGE value="第28次提交20220425" />
+    <MESSAGE value="第29次提交20220426" />
+    <MESSAGE value="第30次提交20220426" />
+    <MESSAGE value="第31次提交20220428" />
+    <MESSAGE value="第32次提交20220611" />
+    <option name="LAST_COMMIT_MESSAGE" value="第32次提交20220611" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="157" key="GridCell.Tab.0.bottom" timestamp="1660444144548">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1660444144548" />
+    <state width="1493" height="157" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1660361731378" />
+    <state width="1493" height="157" key="GridCell.Tab.0.center" timestamp="1660444144548">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="157" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1660444144548" />
+    <state width="1493" height="157" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1660361731377" />
+    <state width="1493" height="157" key="GridCell.Tab.0.left" timestamp="1660444144548">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="157" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1660444144548" />
+    <state width="1493" height="157" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1660361731377" />
+    <state width="1493" height="157" key="GridCell.Tab.0.right" timestamp="1660444144548">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="157" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1660444144548" />
+    <state width="1493" height="157" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1660361731378" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1659443089813">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1659443089813" />
+    <state x="538" y="216" key="Vcs.Push.Dialog.v2" timestamp="1659768235414">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="538" y="216" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1080.0.864.1496@0.0.1536.824" timestamp="1654915560230" />
+    <state x="538" y="216" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1659768235414" />
+    <state x="759" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1654915526432">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="759" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1080.0.864.1496@0.0.1536.824" timestamp="1654915526432" />
+    <state x="-1489" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1660367205272">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1489" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1536.824@-1920.0.1536.824" timestamp="1660367205272" />
+  </component>
+</project>
