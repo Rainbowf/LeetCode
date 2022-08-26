@@ -1,4 +1,4 @@
-package dualWeek;
+package exams.huawei;
 
 import java.util.*;
 
@@ -9,6 +9,7 @@ class Main {
     public static void main(String[] args) {
         int[] nums = {-1, -3, -4, 0 , 1, 2, 3, 4, 4};
         System.out.println(calculate(nums));
+        System.out.println();
     }
 
     public static int calculate(int[] nums) {

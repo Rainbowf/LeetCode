@@ -2,7 +2,7 @@ package offer2;
 
 import java.util.Arrays;
 
-class Solution098 {
+class  Solution098 {
     //动态规划，时间mn，空间mn
 //    public int uniquePaths(int m, int n) {
 //        int[][] dp = new int[m + 1][n + 1];
