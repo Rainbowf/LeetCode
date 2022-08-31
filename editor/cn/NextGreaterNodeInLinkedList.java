@@ -48,11 +48,6 @@
 //
 
 package leetcode.editor.cn;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Stack;
-
 public class NextGreaterNodeInLinkedList {
     public static void main(String[] args) {
         Solution solution = new NextGreaterNodeInLinkedList().new Solution();
@@ -71,22 +66,7 @@ public class NextGreaterNodeInLinkedList {
  */
 class Solution {
     public int[] nextLargerNodes(ListNode head) {
-        Stack<Integer> stack = new Stack<Integer>();
-        List<Integer> array = new ArrayList<Integer>();
-        while (head != null) {
-            array.add(head.val);
-            head = head.next;
-        }
-        int[] res = new int[array.size()];
-        for (int i = 0; i < array.size(); i++) {
-            while (!stack.isEmpty() && array.get(i) > array.get(stack.peek())) {
-                int last = stack.pop();
-                res[last] = array.get(i);
-            }
-            stack.push(i);
-            res[i] = 0;
-        }
-        return res;
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
